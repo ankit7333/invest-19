@@ -38,6 +38,7 @@ const Header = () => {
                         <Button type={`button__icon`}>
                             <span className={styles.icon__notification}>
                                 <HiOutlineBell />
+                                <span className={styles.count}>8</span>
                             </span>
                         </Button>
                     </span>

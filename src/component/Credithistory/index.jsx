@@ -86,6 +86,26 @@ const Credithistory = () => {
                             <td>Quiz Reattempt</td>
                             <td>Credit Utilized for Quiz Reattempt on Day 2 = 21st April 2025</td>
                         </tr>
+                        <tr>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <span className={styles.credit}>
+                                    <span className={`imgwrap ${styles.downarrow}`}>
+                                        <HiArrowDown />
+                                    </span>
+                                    <span className={styles.credit__right}>
+                                        <span>Credit Out</span>
+                                        <span>Order: ABC12345</span>
+                                    </span>
+                                </span>
+                            </td>
+                            <td>1500.00</td>
+                            <td>10 June 2025</td>
+                            <td>Quiz Reattempt</td>
+                            <td>Credit Utilized for Quiz Reattempt on Day 2 = 21st April 2025</td>
+                        </tr>
                     </tbody>
                 </table>
             </div>
