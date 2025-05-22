@@ -1,0 +1,73 @@
+@use '../../styles/index.scss' as *;
+.credithistory{
+    grid-area:history;
+    color:$color-white;
+    @extend .mr-2, .ml-2;
+    @media screen and (min-width:996px){
+        margin-left:0;
+        margin-right:15rem;
+    }
+    &__top{
+        display:flex;
+        align-items:center;
+        justify-content:space-between;
+        @extend .mb-2;
+    }
+}
+.buttonwrap{
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    gap:1.5rem;
+}
+.downarrow{
+    width:2.5rem;
+    height:2.5rem;
+    background-color:#5E0300;
+    @include border-radius(100%);
+    display:inline-flex;
+    align-items:center;
+    justify-content:center;
+    flex:none;
+}
+.uparrow{
+    @extend .downarrow;
+    background-color:#044915;
+    transform:rotate(180deg);
+}
+.credit{
+    display:inline-flex;
+    gap:1.0rem;
+    &__right{
+        display:inline-flex;
+        flex-direction:column;
+    }
+}
+.table{
+    width:100%;
+    @extend .mb-2;
+    th, td{
+        color:$color-white;
+        font-size:1.2rem; 
+        font-weight:400;
+        text-align:left;
+    }
+    th{
+        white-space:nowrap;
+        padding:1.0rem;
+    }
+    td{
+        background-color:$color-box;
+        padding:1.0rem;
+        vertical-align:top;
+        &:first-child{
+            @include border-radius(2rem 0 0 2rem);
+        }
+        &:last-child{
+            @include border-radius(0 2rem 2rem 0);
+        }
+    }
+    tr:nth-child(even) td{
+        background-color:$color-body;
+    }
+}

@@ -1,0 +1,36 @@
+@mixin position($position, $top:null, $right:null, $bottom:null, $left:null) {
+    position:$position;
+    bottom:$bottom;
+    right:$right;
+    left:$left;
+    top:$top;
+}
+@mixin transition($transition...){
+    -webkit-transition:$transition;
+    -moz-transition:$transition;
+    -o-transition:$transition;
+    transition:$transition;
+}
+@mixin border-radius($top-left:null, $top-right:null, $bottom-right:null, $bottom-left:null){
+    -webkit-border-radius:$top-left $top-right $bottom-right $bottom-left;
+    -moz-border-radius:$top-left $top-right $bottom-right $bottom-left;
+    -ms-border-radius:$top-left $top-right $bottom-right $bottom-left;
+    border-radius:$top-left $top-right $bottom-right $bottom-left;  
+  }
+@mixin box-shadow($x-axis:0, $y-axis:1px, $blur:2px, $color:$default) {
+    box-shadow:$x-axis $y-axis $blur $color;
+}
+@mixin fadeIn{
+    animation-name:fade_In;
+    -webkit-animation-duration:.5s;
+    animation-duration:.5s;
+    -webkit-animation-fill-mode:both;
+    animation-fill-mode:both;
+}
+@mixin fadeUp{
+    animation-name:fade_Up;
+    -webkit-animation-duration:1s;
+    animation-duration:1s;
+    -webkit-animation-fill-mode:both;
+    animation-fill-mode:both;
+}

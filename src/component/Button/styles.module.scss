@@ -1,0 +1,33 @@
+@use '../../styles/index.scss' as *;
+@import '../../styles/globals.scss';
+
+.button{
+    border:0;
+    background:transparent;
+    cursor:pointer;
+    @include border-radius(2rem);
+    @include transition(all .3s linear);
+    // width:100%;
+    font-size:1.4rem;
+    height:4rem;
+    opacity:.8;
+    overflow:hidden;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    color:$color-white;
+    &__primary{
+        background-color:$color-primary;
+        @extend .p-1;
+    }
+    &__secondary{
+        border:.1rem solid $color-primary;
+        @extend .p-1;
+        background-color:$color-black;
+    }
+    &__icon{
+        svg{
+            @extend .imgwrap;
+        }
+    }
+}

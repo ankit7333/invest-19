@@ -1,24 +1,19 @@
-import logo from './logo.svg';
-import './App.css';
-
+import { MenuProvider } from './context/contextMenu';
+import './styles/globals.scss';
+import Header from './component/Header'
+import Sidebar from './component/Sidebar'
+import Ificredit from './component/Ificredit'
+import Credithistory from './component/Credithistory'
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <MenuProvider>
+      <main className={`main display__grid`}>
+        <Header />
+        <Sidebar />
+        <Ificredit />
+        <Credithistory />
+      </main>
+    </MenuProvider>
   );
 }
 
