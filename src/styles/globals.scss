@@ -110,13 +110,13 @@ body, input, textarea, select, button{
   // max-width:1440px;
   width:100%;
   margin:0 auto;
+  @include fadeIn;
 }
 .display{
   &__grid{
     display:grid;
     gap:3rem;
     grid-template-columns:repeat(4, 1fr);
-    // grid-template-rows:repeat(5, 1fr);
     grid-template-areas:
       " header header header header "
       " siderbar ifi ifi ifi "
